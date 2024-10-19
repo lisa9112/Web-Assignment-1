@@ -1,0 +1,290 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f5f5;
+    border: 2px solid #ff6b6b;
+    border-top: 0;
+    margin: 0 350px;
+    max-width: 1150px;
+    position: relative;
+    min-width: 1150px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-right: 70px;
+    padding-top: 100px;
+    
+    margin: 0 auto;
+    gap: 20px;
+    height: 700px;
+    background-color: white;
+}
+
+.leftgallery {
+    max-width: 55%;
+    margin-left: 80px;
+}
+
+.text {
+    margin-bottom: 37px;
+}
+
+.small-heading {
+    font-weight: 400;
+    font-size: 14px;
+    color: #ff6b6b; 
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.large-heading {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.4;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight:initial;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-auto-rows: minmax(100px, auto); 
+    float: right;
+}
+
+.grid img {
+    object-fit: cover;
+}
+
+.img1 {
+    width: 180px; 
+    height: 180px; 
+}
+
+.img2 {
+    margin-left: 22px;
+    width: 93%; 
+    height: 180px; 
+}
+
+.img3 {
+    width: 165%;
+    height: 180px; 
+    margin-top: 20px;
+}
+
+.img4 {
+    width: 180px;
+    height: 180px;
+    margin-left: 140px;
+    margin-top: 20px;
+}
+
+.rightgallery {
+    
+    width: 70%;
+}
+
+.rightgallery img {
+    width: 110%;
+    object-fit: cover;
+    
+}
+
+.rightgallery{
+    
+    margin-right: 70px;
+    
+    height: 545px;
+    display: flex;
+    align-items: stretch;
+}
+
+.leftgallery {
+    max-width: 55%;
+}
+
+
+.member {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px;
+    
+    margin: 0 auto;
+    gap: 20px;
+    height: 700px;
+    background-color: white;
+}
+
+
+.membertext-grid{
+    margin-top: 40px;
+    margin-right:620px;
+}
+
+.member-small-heading{
+    font-weight: 400;
+    font-size: 14px;
+    color: #ff6b6b; 
+    margin-bottom: 10px;
+    
+}
+
+.member-large-heading {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.4;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight:initial;
+}
+
+.smalltext{
+    font-size: 15.67px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+}
+
+.featured-img-grid {
+    margin-top: 30%;
+    width: 35%;
+}
+
+.featured-img img {
+    
+    width: 85%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 190px 190px 0 0;    
+     
+}
+
+.featured-img {
+    position: relative;
+    float: right;
+}
+
+.featured-img::before {
+    content: '';
+    position: absolute;
+    top: -32px;
+    left: -35px;
+    width: 350px;
+    height: 503px;
+    border: 2px solid transparent;
+    border-radius: 340px 340px 0 0;
+    border-left: 2px solid #ff6b6b;
+    border-top: 2px solid #ff6b6b;
+    flex: 1;
+}
+
+
+
+.featured-img{
+    width: 50%;
+    height: 700px;
+    
+}
+
+
+.bttn1{
+    margin-top: 70px;
+    margin-left: 0px;
+    padding: 15px;
+    width: 130px;
+    height: 50px;
+    align-items: center;
+    background-color:#FF4500;
+    border-radius: 4px;
+    color: white;
+    gap: 6px;
+    font-size:small ;
+    border: none;
+}
+.bttn2{
+    margin-top: 70px;
+    margin-left: 30px;
+    padding: 15px;
+    width: 130px;
+    height: 50px;
+    align-items: center;
+    background-color:white;
+    border-radius: 4px;
+    color: #FF4500;
+    gap: 6px;
+    font-size:small ;
+    border-color: #ff6b6b;
+}
+
+.footer {
+    display: flex;
+    align-items: flex-start;
+    background: linear-gradient(180deg, #FFFFFF 0%, #f8e6df 100%); 
+    justify-content: space-around; 
+    padding: 50px;
+    margin: 0 auto;
+    gap: 50px; 
+    height: auto;
+    
+}
+
+.footertext {
+    max-width: 25%;
+}
+
+.footer-large-heading {
+    font-size: 24px;
+    color: #111;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.footer-small-heading {
+    font-size: 14px;
+    color: #000000;
+    line-height: 1;
+    font-weight: 400;
+}
+
+ul.serial {
+    list-style: none;
+    padding: 0;
+}
+
+ul.serial header {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FF5A36;
+    margin-bottom: 10px;
+}
+
+.serial li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.serial1 li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.serial1 li img {
+    width: 25px;
+    height: 25px;
+}
+
